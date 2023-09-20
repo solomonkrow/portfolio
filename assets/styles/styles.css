@@ -1,0 +1,448 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font: "Trebuchet MS", sans-serif;
+  --borderColor: #14303a;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, white, #e3edf1, #60737a);
+}
+
+header {
+  padding: 10px;
+  font-family: var(--font);
+  background-color: #60737a;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  align-items: center;
+  font-size: 48px;
+  color: white;
+}
+
+header nav {
+  
+  
+  font-family: var(--font);
+  font-size: 20px;
+  display: flex;
+}
+
+nav ul {
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header nav ul,
+.contact-me ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0;
+  max-width: 600px;
+}
+
+header nav ul li,
+.contact-me nav ul li {
+  display: inline-block;
+  margin-left: 30px;
+  position: relative;
+}
+
+nav a {
+    padding: 20px;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  justify-content: center;
+}
+
+footer a {
+  color: var(--borderColor);
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  padding: 0px 15px;
+}
+
+header a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  display: block;
+  height: 2px;
+  width: 0;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+footer a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  display: block;
+  height: 2px;
+  width: 0;
+  background: var(--borderColor);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+header a:hover::after,
+footer a:hover::after {
+  width: 100%;
+  left: 0px;
+}
+
+.lotus {
+  height: 100px;
+  width: 100%;
+  margin-bottom: 20px;
+  background-image: url(/assets/images/lotus.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.right {
+  display: block;
+  color: gold;
+  width: 250px;
+  padding: 10px;
+  font-size: 14px;
+  position: absolute;
+  right: 170px;
+  top: 85px;
+  font-style: italic;
+  font-family: var(--font);
+}
+
+.lotus span {
+  color: white;
+}
+
+.about-me,
+.work,
+.contact-me {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.about-me aside,
+.work aside,
+.contact-me aside {
+  padding: 40px;
+  display: block;
+  border-right: 4px solid var(--borderColor);
+  text-align: right;
+  width: 25%;
+}
+
+.about-me article {
+  width: 75%;
+}
+
+.about-me p,
+.container p,
+footer ul {
+  padding: 20px;
+  display: inline-block;
+  font-family: var(--font);
+}
+
+.cardImg {
+  height: 130px;
+  width: 100%;
+}
+
+main h2,
+.contact-me h2 {
+  font-size: 40px;
+  font-family: var(--font);
+  color: var(--borderColor);
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 80px 20px 20px;
+  width: 75%;
+  justify-content: center;
+}
+
+
+
+.card {
+  flex-direction: row;
+  width: 47.9%;
+  height: 140px;
+  margin: 10px;
+  border: 5px solid var(--borderColor);
+  display: flex;
+}
+
+#led {
+  background-image: url(/assets/images/LEDwall.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#calc {
+  background-image: url(/assets/images/calculator.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#puzzle {
+  background-image: url(/assets/images/pastel.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#run {
+  background-image: url(/assets/images/codeScreen.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* #profilePic {
+    background-image: url(/assets/images/face.jpg);
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    position: absolute ;
+    top: 7%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+} */
+
+
+.cardText {
+  background-color: var(--borderColor);
+  color: white;
+}
+
+.card:hover,
+#img-Container:hover {
+  box-shadow: 0 10px 20px #000;
+}
+
+.work a {
+    width: 100%;
+    height: 300px;
+    margin: 10px;
+    border: 5px solid var(--borderColor);
+    background-image: url(/assets/images/surfSky.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+footer nav {
+  width: 75%;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  font: var(--font);
+}
+
+footer ul {
+  margin-left: 75px;
+  font-size: 19px;
+}
+
+footer {
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1080px) {
+  .card {
+    flex-direction: row;
+    width: 46%;
+    height: 140px;
+    margin: 10px;
+    border: 5px solid var(--borderColor);
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 940px) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 0 0 0;
+        justify-content: center;
+      }
+    
+      header h1 {
+        font-size: 40px;
+        padding-bottom: 20px;
+      }
+    
+      header nav ul {
+        flex-direction: row;
+        padding: 15px;
+      }
+    
+      header nav {
+        background-color: var(--borderColor);
+        width: 100%;
+        height: 100px;
+        margin: 0;
+      }
+    
+      .lotus {
+        height: 400px;
+      }
+    
+      .right {
+        display: block;
+        color: gold;
+        width: 250px;
+        padding: 10px;
+        font-size: 14px;
+        position: absolute;
+        right: 100px;
+        top: 500px;
+        font-style: italic;
+        font-family: var(--font);
+      }
+}
+
+/* Smartphones */
+@media screen and (max-width: 600px) {
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0 0 0;
+    justify-content: center;
+  }
+
+  header h1 {
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+
+  header nav {
+    display: flex;
+    background-color: var(--borderColor);
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    padding: 20px
+    
+  }
+  
+  header nav ul {
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+
+  .lotus {
+    height: 400px;
+  }
+
+  .right {
+    display: block;
+    color: gold;
+    width: 250px;
+    padding: 10px;
+    font-size: 14px;
+    position: absolute;
+    right: 100px;
+    top: 600px;
+    font-style: italic;
+    font-family: var(--font);
+  }
+
+  .about-me,
+  .work,
+  .contact-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+
+  .about-me aside,
+  .work aside,
+  .contact-me aside {
+    padding: 20px 40px;
+    display: block;
+    border-bottom: 4px solid var(--borderColor);
+    border-right: 0;
+    width: 90%;
+    text-align: center;
+  }
+
+  header a {
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+  }
+
+  .card,
+  .work a {
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    margin: 10px;
+    border: 5px solid var(--borderColor);
+  }
+
+  .cardImg {
+    height: 100%;
+    background-position: center;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  footer nav {
+    justify-content: center;
+  }
+
+  .contact-me ul {
+    flex-direction: column;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .contact-me li {
+    padding: 10px 10px 40px 10px;
+  }
+
+  .contact-me nav ul li {
+    margin-left: 0;
+  }
+
+  .container {
+    justify-content: center;
+    padding: 20px;
+  }
+}
