@@ -178,7 +178,13 @@ main h2,
   font-family: var(--font);
   color: var(--borderColor);
 }
-
+h3 {
+    font-family: var(--font);
+    text-align: center;
+    background-color: var(--borderColor);
+    padding: 10px;
+    color: WHITE;
+}
 .container {
   position: relative;
   display: flex;
@@ -220,16 +226,14 @@ main h2,
   background-position: center;
 }
 
-/* #profilePic {
+ #profilePic {
     background-image: url(/assets/images/face.jpg);
     background-size: cover;
-    height: 100px;
-    width: 100px;
-    position: absolute ;
-    top: 7%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-} */
+    height: 250px;
+    width: 250px;
+    border: 4px solid var(--borderColor);
+    margin: 20px;
+}
 
 
 .cardText {
