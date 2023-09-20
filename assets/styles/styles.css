@@ -111,7 +111,7 @@ footer a:hover::after {
   height: 100px;
   width: 100%;
   margin-bottom: 20px;
-  background-image: url(/assets/images/lotus.jpg);
+  background-image: url(../../assets/images/lotus.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -206,28 +206,28 @@ h3 {
 }
 
 #led {
-  background-image: url(/assets/images/LEDwall.jpg);
+  background-image: url(../../assets/images/LEDwall.jpg);
   background-size: cover;
   background-position: center;
 }
 #calc {
-  background-image: url(/assets/images/calculator.jpg);
+  background-image: url(../../assets/images/calculator.jpg);
   background-size: cover;
   background-position: center;
 }
 #puzzle {
-  background-image: url(/assets/images/pastel.jpg);
+  background-image: url(../../assets/images/pastel.jpg);
   background-size: cover;
   background-position: center;
 }
 #run {
-  background-image: url(/assets/images/codeScreen.jpg);
+  background-image: url(../../assets/images/codeScreen.jpg);
   background-size: cover;
   background-position: center;
 }
 
  #profilePic {
-    background-image: url(/assets/images/face.jpg);
+    background-image: url(../../assets/images/face.jpg);
     background-size: cover;
     height: 250px;
     width: 250px;
@@ -251,7 +251,7 @@ h3 {
     height: 300px;
     margin: 10px;
     border: 5px solid var(--borderColor);
-    background-image: url(/assets/images/surfSky.jpg);
+    background-image: url(../../assets/images/surfSky.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
