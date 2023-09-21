@@ -198,7 +198,7 @@ h3 {
 
 .card {
   flex-direction: row;
-  width: 47.9%;
+  width: 47%;
   height: 140px;
   margin: 10px;
   border: 5px solid var(--borderColor);
